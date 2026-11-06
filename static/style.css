@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #087c9b 0%, #064765 48%, #001329 100%);
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #51c9f4;
+    font-size: 58px;
+    letter-spacing: 3px;
+    margin: 30px 0 55px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0 0 28px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.left-panel {
+    width: 42%;
+}
+
+label {
+    display: block;
+    margin: 20px 12px 6px;
+    font-size: 15px;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 43px;
+    padding: 3px 5px 3px 14px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    width: 31px;
+    height: 31px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #07516c;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:hover {
+    background: #00bde8;
+}
+
+#result {
+    min-height: 136px;
+    margin-top: 5px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: rgba(12, 112, 143, 0.8);
+    font-size: 15px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+#result h3 {
+    margin-top: 0;
+    color: #63d9ff;
+}
+
+.tree {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree img {
+    width: 100%;
+    max-width: 360px;
+    object-fit: contain;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 42px;
+        margin-bottom: 35px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    .tree {
+        width: 80%;
+        margin-top: 35px;
+    }
+}
+.tree img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    object-fit: contain;
+}
